@@ -16,10 +16,7 @@ function Main() {
   //useState
   const [warning, setWarning] = useState("");
   const [second, setSecond] = useState("");
-  //Modal
-  const [show, setShow] = useState(false); //set to false-we dont want it to show itself auto
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+
   const [selectedMarker, setSelectedMarker] = useState(null);
 
   //Functions to retrive the data from API
@@ -53,10 +50,7 @@ function Main() {
   }, []);
 
 
-  //haha
-  const handleClick = (warning) => {
-    setSelectedMarker(warning);
-  };
+
 
   //THE RETURN RENDER METHOD
   return (
